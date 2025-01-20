@@ -581,3 +581,4 @@ cython_debug/
 
 # screenshots taken for HW 1
 screenshot.jpeg
+.DS_Store
