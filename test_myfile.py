@@ -8,14 +8,14 @@ def test_calculate_average():
     assert calculate_average([1, 2, 3]) == 2
 
 def test_calculate_average_empty_list():
-    with pytest.raises(ZeroDivisionError):
-        calculate_average([])
+    # Incorrect assertion; logical error 
+    assert calculate_average([]) == 0  
 
 def test_calculate_average_invalid_input():
     with pytest.raises(TypeError):
         calculate_average("invalid input")
 
-# # This test is expected to fail
-# def test_calculate_average_failure():
-#     # Incorrect assertion
-#     assert calculate_average([1, 2, 3, 4, 5]) == 10  
+# This test is expected to fail
+def test_calculate_average_failure():
+    # Incorrect assertion
+    assert calculate_average([1, 2, 3, 4, 5]) == 10  
